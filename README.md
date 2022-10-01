@@ -1,3 +1,5 @@
+[![python application test with github actions](https://github.com/Sgiriarun/devops-practice/actions/workflows/devops_python.yml/badge.svg)](https://github.com/Sgiriarun/devops-practice/actions/workflows/devops_python.yml)
+
 # devops-practice
 ## this is devops practice library (using makefile, requirements.txt, source file, Dockerfile )
 ## representation 
@@ -11,3 +13,4 @@ create virtual
     dummy fills(install, test, lint, format, deploy, all)
 3. fill the requirements file and add make install correctly 
 4. pin the version number for installed package by 'pip freeze | less'
+
