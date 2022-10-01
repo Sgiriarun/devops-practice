@@ -7,4 +7,7 @@ create virtual
     'python3 -m venv ~/.venv' or 'virtualvenv ~/.venv'
     and souce virtual environment 'source ~/.venv/bin/activate' in ~/.bashrc 
     so whenever we open new terminal, it is processed to open virtual environment.
-2. create empty file requirements.txt Dockerfile Makefile and src folder
+2. create empty file requirements.txt Dockerfile Makefile and src folder and fill the Makefile with 
+    dummy fills(install, test, lint, format, deploy, all)
+3. fill the requirements file and add make install correctly 
+4. pin the version number for installed package by 'pip freeze | less'
