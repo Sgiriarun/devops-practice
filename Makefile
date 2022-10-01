@@ -1,5 +1,6 @@
 install:
-	#install the source code
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt 
 
 format:
 	#makesure the correct format of code
