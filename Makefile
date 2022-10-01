@@ -7,10 +7,12 @@ format:
 	black *.py src/*.py
 
 lint:
-	#check program syntatically correct using flame or pylint
+	#check program syntatically correct using flame or pylint, disabling R,C avoid warnig and avoid ci fail
+	pylint --disable=R,C *.py src/*.py
 
 test:
-	#test program
+	#test program cov flag says how much test coverage inside
+	python -m pytest -vv --cov=src test_logic.py
 
 deploy:
 	#deploy code

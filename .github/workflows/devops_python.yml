@@ -17,10 +17,10 @@ jobs:
         make format
     - name: lint with pylint
       run: |
-        #make lint
+        make lint
     - name: test with source code
       run: |
-        #make test
+        make test
 
       
 
