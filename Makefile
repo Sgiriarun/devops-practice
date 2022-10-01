@@ -4,6 +4,7 @@ install:
 
 format:
 	#makesure the correct format of code
+	black *.py src/*.py
 
 lint:
 	#check program syntatically correct using flame or pylint

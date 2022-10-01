@@ -13,4 +13,5 @@ create virtual
     dummy fills(install, test, lint, format, deploy, all)
 3. fill the requirements file and add make install correctly 
 4. pin the version number for installed package by 'pip freeze | less'
-
+5. create workflow,(helps in ci/cd) by use of github actions (.github/workflows/devops_python.yml)
+6. add format in the make file for src/logic.py and main.py
