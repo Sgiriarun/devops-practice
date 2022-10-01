@@ -1,3 +1,5 @@
+[![python application test with github actions](https://github.com/Sgiriarun/devops-practice/actions/workflows/devops_python.yml/badge.svg)](https://github.com/Sgiriarun/devops-practice/actions/workflows/devops_python.yml)
+
 # devops-practice
 ## this is devops practice library (using makefile, requirements.txt, source file, Dockerfile )
 ## representation 
