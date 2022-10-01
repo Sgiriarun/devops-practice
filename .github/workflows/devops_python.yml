@@ -12,14 +12,15 @@ jobs:
     - name: Install basic need
       run: |
         make install 
+    - name: format code
+      run: |
+        make format
     - name: lint with pylint
       run: |
         #make lint
     - name: test with source code
       run: |
         #make test
-    - name: format code
-      run: |
-        #make format
+
       
 
