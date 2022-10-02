@@ -8,7 +8,7 @@ format:
 
 lint:
 	#check program syntatically correct using flame or pylint, disabling R,C (recomended & configuration warnig)avoid warnig and avoid ci fail
-	pylint --disable=R,C *.py src/*.py
+	pylint --disable=R,C *.py src/*.py *.py
 
 test:
 	#test program cov flag says how much test coverage inside

@@ -1,4 +1,4 @@
-from cgitb import text
+
 import wikipedia
 from textblob import TextBlob
 
