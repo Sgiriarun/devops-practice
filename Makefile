@@ -7,7 +7,7 @@ format:
 	black *.py src/*.py
 
 lint:
-	#check program syntatically correct using flame or pylint, disabling R,C avoid warnig and avoid ci fail
+	#check program syntatically correct using flame or pylint, disabling R,C (recomended & configuration warnig)avoid warnig and avoid ci fail
 	pylint --disable=R,C *.py src/*.py
 
 test:
