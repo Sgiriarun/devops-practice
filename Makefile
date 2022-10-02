@@ -12,9 +12,18 @@ lint:
 
 test:
 	#test program cov flag says how much test coverage inside
-	python -m pytest -vv --cov=src test_logic.py
+	python -m pytest -vv --cov=src --cov=main test_*.py
 
+build:
+	#docker build
+	docker build -t devops-practice .
+
+run:
+	#run docker 
+	docker run -p 127.0.0.1:8080:8080 4ad68334a6a6
+	
 deploy:
 	#deploy code
+
 
 all: install format lint test deploy

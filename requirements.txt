@@ -4,4 +4,7 @@ pytest-cov==4.0.0
 pylint==2.15.3
 black==22.8.0
 fire==0.4.0
+fastapi==0.85.0
+uvicorn==0.18.3
+textblob==0.17.1
 # pytest -testing tool, pytest-cov lines covered, fire -cmd line tool fuction to map, black- formatting tool.

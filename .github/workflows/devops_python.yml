@@ -21,6 +21,8 @@ jobs:
     - name: test with source code
       run: |
         make test
-
+    - name: build imges
+      run: |
+        make build
       
 
