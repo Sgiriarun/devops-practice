@@ -14,8 +14,10 @@ create virtual
 3. fill the requirements file and add make install correctly 
 4. pin the version number for installed package by 'pip freeze | less'
 5. create workflow,(helps in ci/cd) by use of github actions (.github/workflows/devops_python.yml)
+    CI on push
 6. add format in the make file for src/logic.py and main.py
 7. add test in the make file for asses the ouptut by making test_logic.py
 8. add cli tool for project using cli-fire.py and shebang it (./cli-fire.py --help)
 9. update src and cli-fire.py
-
+10. add test code to automate by using test_logic and test_main file
+11. update containtering and deployment code in makefile
