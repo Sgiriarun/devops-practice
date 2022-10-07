@@ -11,7 +11,8 @@ jobs:
         python-version: 3.8
     - name: Install basic need
       run: |
-        make install 
+        make install
+        python -m textblob.download_corpora
     - name: format code
       run: |
         make format

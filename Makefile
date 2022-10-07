@@ -2,6 +2,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt 
 
+
 format:
 	#makesure the correct format of code
 	black *.py src/*.py
@@ -24,6 +25,9 @@ run:
 	
 deploy:
 	#deploy code
-
-
+	aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 788641659614.dkr.ecr.ap-south-1.amazonaws.com
+	docker build -t wiki_arun .
+	docker tag wiki_arun:latest 788641659614.dkr.ecr.ap-south-1.amazonaws.com/wiki_arun:latest
+	docker push 788641659614.dkr.ecr.ap-south-1.amazonaws.com/wiki_arun:latest
+	
 all: install format lint test deploy
